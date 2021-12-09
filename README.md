@@ -5,9 +5,9 @@
 - Thẻ nhớ chứa file firmware.
 
 ### Thao tác thực hiện: 
- * Sử dụng phần mềm nạp GremsyTool
+ #### Sử dụng phần mềm nạp GremsyTool
   - Có hướng dẫn ở trong file Download của GremsyTool
- * Cài đặt bằng lệnh
+ #### Cài đặt bằng lệnh
   - Nối USB-TTL với 3 dây console của SoM. Bất nguồn M300 -> Màn hình làm việc -> Đăng nhập.
   - Giải nén file tải về, copy file upgrade.7z vào trong thẻ nhớ 
   - Bỏ thẻ nhớ vào khe SD của Pixy-SM300.
