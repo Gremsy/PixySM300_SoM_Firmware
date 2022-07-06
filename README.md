@@ -1,25 +1,15 @@
-# PixySM300_SoM_Firmware
-## Cách sử dụng firmware cho Pixy-SM prototype 1:
-### Chuẩn bị trước:
-- Một thiết bị USB-TTL để đọc console của SoM 
-- Thẻ nhớ chứa file firmware.
-
-### Thao tác thực hiện: 
- #### Sử dụng phần mềm nạp GremsyTool
-  - Có hướng dẫn ở trong file Download của GremsyTool
- #### Cài đặt bằng lệnh
-  - Nối USB-TTL với 3 dây console của SoM. Bất nguồn M300 -> Màn hình làm việc -> Đăng nhập.
-  - Giải nén file tải về, copy file upgrade.7z vào trong thẻ nhớ 
-  - Bỏ thẻ nhớ vào khe SD của Pixy-SM300.
-  - Check tình trạng của SoM đủ điều khiển để nạp.
-	    tek_ota --status
-  -> SoM ở trạng thái nạp được sẽ hiện dòng:
-	  Current OTA state: Booted into normal mode 
-  - Sử dụng lệnh dưới để flash firmware trong thẻ nhớ.
-	  tek_ota --upgrade <path_to_file_upgrade.7z>
-  - Sau khi nạp xong vô màn hình làm việc. Sử dụng dòng lệnh sau để kết thúc flashing.
-	  tek_ota --success
-  - Nhấn lệnh sau để SoM bắt đầu chạy payload tự động.
-	  systemctl start gremsy-payload.service
-	  systemctl enable gremsy-payload.service
-	
+# Pixy-SM Payload Firmware
+### Introduction:
+  This is firmware for payload of Pixy-SM. It helps system of Pixy-SM communicate with M300 RTK and send command and adjustment to Sony A7Riv and Gimbal during operation. This firmware also collects image from sensor of Camera to live-stream on M300 RTK Remote Controller and so on.
+### How to upgrade Payload Firmware with Flash Tool of Gremsy:
+ #### Preparation:
+  - A TYPE-C USB 
+  - PC with Window OS.
+ #### Procedure: (Detail will be mention in Pixy-SM manual)
+  - Step 1: Connect Pixy-SM and PC with USB cable.
+  - Step 2: Switch button on Pixy-SM's tilt axis to P.
+  - Step 3: Hold Boot button, push Reset and Release Boot button to change Pixy-SM to BOOT MODE.
+  - Step 3: Open GremsyFlashTool, choose Pixy-SM, choose "Open File", browse the path of Pixy-SM Firmware Directory (Note: Blank must not be exist)
+  - Step 4: Select "Check Device".
+  - Step 5: IF it notifies that "device connected. ready to flash". Chose "Flash Device" to upgrade firmware.
+ 
