@@ -5,6 +5,7 @@
  #### Preparation:
   - A TYPE-C USB 
   - PC with Window OS.
+  - GremsyFlashTool. Link: https://github.com/Gremsy/GremsyFlashTools_Public/releases/tag/1.1.2
  #### Procedure: (Detail will be mentioned in Pixy-SM manual)
   - Step 1: Connect Pixy-SM and PC with USB cable.
   - Step 2: Switch button on Pixy-SM's tilt axis to P.
