@@ -5,7 +5,7 @@
  #### Preparation:
   - A TYPE-C USB 
   - PC with Window OS.
- #### Procedure: (Detail will be mention in Pixy-SM manual)
+ #### Procedure: (Detail will be mentioned in Pixy-SM manual)
   - Step 1: Connect Pixy-SM and PC with USB cable.
   - Step 2: Switch button on Pixy-SM's tilt axis to P.
   - Step 3: Hold Boot button, push Reset and Release Boot button to change Pixy-SM to BOOT MODE.
